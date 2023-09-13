@@ -20,7 +20,7 @@ export default function Home() {
   const renderizarCeils = (saida: any) => {
     return saida.map((item: string) => {
       return (
-        <Ceil hour={item} color={`${arraysIguais(saida, vilaNova) ? "#bc6c25" : "#ef233c"}`} />
+        <Ceil key={item} hour={item} color={`${arraysIguais(saida, vilaNova) ? "#bc6c25" : "#ef233c"}`} />
       )
     })
   }
